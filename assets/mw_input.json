@@ -1,0 +1,25 @@
+[
+  {
+    "id" : 1,
+    "type" : "customer",
+    "events" :  [
+      {"interface":"deposit", "money": 400,"dest":1  },
+      {"interface":"withdraw", "money": 400,"dest": 2 },
+      {"interface":"query", "dest": 2 }
+    ]
+  },
+  {
+    "id" : 1,
+    "type" : "bank",
+    "balance" : 0
+  },
+  {
+    "id" : 2,
+    "type" : "bank",
+    "balance" : 0
+  }
+]
+The system is said to support a given model if operations on memory follow specific rules. The data consistency model specifies a contract between programmer and system, wherein the system guarantees that if the programmer follows the rules, memory will be consistent and the results of reading, writing, or updating memory will be predictable. This is different from coherence, which occurs in systems that are cached or cache-less, and is consistency of data with respect to all processors. Coherence deals with maintaining a global order in which writes to a single location or single variable are seen by all processors. Consistency deals with the ordering of operations to multiple locations with respect to all processors.
+
+
+Monotonic read consistency

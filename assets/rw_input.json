@@ -1,0 +1,20 @@
+[
+  {
+    "id" : 1,
+    "type" : "customer",
+    "events" :  [
+      {"interface":"deposit", "money": 400,"dest":1  },
+      {"interface":"query", "dest":2  }
+    ]
+  },
+  {
+    "id" : 1,
+    "type" : "bank",
+    "balance" : 0
+  },
+  {
+    "id" : 2,
+    "type" : "bank",
+    "balance" : 0
+  }
+]
